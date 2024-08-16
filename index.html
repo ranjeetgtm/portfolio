@@ -1,291 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Aditya Vikram Singh" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS,
-        Aditya Vikram Singh DPSRKP, Aditya Vikram Singh UMass, Aditya Vikram
-        Singh UMass Amherst, Aditya Vikram Singh New Delhi, Aditya Vikram
-        Singh Amherst, Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA,
-        Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
-    />
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Aditya Vikram Singh</title>
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+  <head>
+    <title>Anurag Devnath Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /*======================================
+//--//-->   ABOUT
+======================================*/
+
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
+
+      .skill-mf .progress {
+        /* background-color: #cde1f8; */
+        margin: 0.5rem 0 1.2rem;
+        border-radius: 0;
+        height: 0.7rem;
+      }
+
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #ffbd39;
+      }
+
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+
+        to {
+          width: 0;
+        }
+      }
+
+      /* project image zoom effect */
+
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      @media screen and (orientation: portrait) {
+        body {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+
+        .order-md-last {
+          visibility: hidden;
+        }
+
+        .about-img img {
+          content: url("images/me.png");
+        }
+      }
+    </style>
+
   </head>
 
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">ADITYA VIKRAM SINGH</span>
-          <span class="site-description">Programmer • Web Developer • Graphic Designer</span>
-        </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/avs1508/">
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/AVS1508">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Résumé" target="_blank" href="https://www.adityavsingh.com/resume.html">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:avsingh@umass.edu" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
-        </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Anurag Devnath</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+          Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">
+                <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">
+                <span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">
+                <span>Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">
+                <span>Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#send-message" class="nav-link">
+                <span>Message me</span></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-    </div>
+    </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider  owl-carousel">
+        <div class="slider-item ">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/me.png);">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm
+                    <span>Anurag Devnath</span></h1>
 
-    <!-- About Section -->
-    <section id="about">
-      <!-- User Introduction-->
-      <div class="user-details">
-        <h1>My Story</h1>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-          <img
-            src="./assets/img/jpg/Professional-Picture-Me.jpg"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-        </picture>
-        <p>
-          I am a junior in the College of Information and Computer Sciences at the University of Massachusetts Amherst,
-          pursuing an undergraduate degree. I am majoring in Computer Science, with intent to double major in
-          Mathematics with Statistics and Data Science concentration. I'm involved as a Software Developer for BUILD
-          UMass, where I use my software engineering skills for pro-bono app/web development and tech consulting for the
-          Amherst community. I also serve as a Designer for the HackUMass Organizing Team, responsible for graphics
-          design and production for the annual hackathon. I am interested in exploring the fields of Software
-          Engineering, Data Science, and Machine Learning, and I am open to opportunities for the same.
-        </p>
-      </div>
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation"></span>
 
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-java-plain-wordmark colored"></i>
-          <i class="devicon-cplusplus-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
-        </div>
+                  <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
 
-        <!-- Technology Stack #2: Front-End -->
-        <div class="tech">
-          <h2>Front-End</h2>
-          <i class="devicon-react-original colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <p>My preferred technologies for front-end web development and component design.</p>
-        </div>
+                    // Create an array of typing text
+                    const typingTexts = ['Software Developer     ', 'Freelancer Artist     ', 'Video Editor    '];
 
-        <!-- Technology Stack #3: Back-End -->
-        <div class="tech">
-          <h2>Back-End</h2>
-          <i class="devicon-nodejs-plain colored"></i>
-          <i class="devicon-express-original-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
-          <p>My preferred technologies for back-end web programming and database architecture.</p>
-        </div>
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 100); // Decreased delay to speed up the typing animation
+                      }
 
-        <!-- Technology Stack #4: Tools -->
-        <div class="tech">
-          <h2>Tools</h2>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i>
-          <i class="devicon-github-plain-wordmark colored"></i>
-          <i class="devicon-docker-plain-wordmark colored"></i>
-          <p>My favorite tools for version control, code editing, and container orchestration.</p>
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 100); // Adjusted delay accordingly
+                    }
+
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                  </script><br><br>
+                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                  <!-- <br> -->
+                  <p>
+                    <a href="https://www.instagram.com/anurag.sketches/" class="btn btn-primary py-3 px-4">My Instagram</a>
+                    <a href="https://www.linkedin.com/in/anuragdevnath/" class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="user-details">
-        <h1>Featured Projects</h1>
-      </div>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <!-- <div class="row d-flex"> -->
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <!-- Details next to profile image -->
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p>
+                          <span class="title-s">Name:
+                          </span>
+                          <span>Anurag Devnath</span></p>
+                        <p>
+                          <span class="title-s">Job Role:
+                          </span>
+                          <span>Software Developer</span></p>
+                        <p>
+                          <!-- <span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> <p> -->
+                          <span class="title-s">Address:
+                          </span>
+                          <span>Bhilai, Chhattisgarh</span></p>
+                      </div>
+                    </div>
+                  </div>
 
-      <!-- User Project #1: Personal Résumé Website -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp" alt="Personal Website" />
-            <img alt="Personal Website" src="./assets/img/jpg/Personal-Resume-Website.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Personal Website</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
-              style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
-            />
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Adobe Coldfusion</span>
+                    <!-- <span class="pull-right">85%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>SQL</span>
+                    <!-- <span class="pull-right">95%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>PYTHON</span>
+                    <!-- <span class="pull-right">85%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>PHP</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Javascript</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>C++</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+
+                  <p>Adobe ColdFusion developer at Arosys Technologies, proficient in PHP, jQuery AJAX, and skilled in crafting visually appealing webpages using HTML, CSS, Tailwind, Bootstrap, and Material UI. Well-versed in Python, C++, C, and Java, with a solid foundation in SQL. Eager to contribute to innovative web development projects.</p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex">
+                      <span>Profile:</span>
+                      <span>Backend Developer &amp; Freelancer Artist</span></li>
+                    <li class="d-flex">
+                      <span>Domain:</span>
+                      <span>Software Developement</span></li>
+                    <li class="d-flex">
+                      <span>Education:</span>
+                      <span>Bachelor of Computer Applications</span></li>
+                    <li class="d-flex">
+                      <span>Language:</span>
+                      <span>English, Hindi, Bengali</span></li>
+                    <!-- <li class="d-flex"> <span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+                    <li class="d-flex">
+                      <span>Other Skills:</span>
+                      <span>
+                        Drawing proficiency, Observational skills, Creativity, Knowledge of art fundamentals, Technical proficiency, Communication skills, Time management, Adaptability &amp; Attention to detail</span></li>
+                    <li class="d-flex">
+                      <span>Interest:</span>
+                      <span>Traveling, Travel Photography, Teaching, Editing</span></li>
+
+                  </ul>
+                </div>
+              </div>
+
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
+                  <p>
+                    <a href="https://www.linkedin.com/in/anuragdevnath/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p style="text-align: justify">
-            I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase my web
-            presence, story, work experience, education, projects, and achievements in an interactive and
-            visually-appealing format.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/">Check it out!</a>
-        </div>
-      </div>
-
-      <!-- User Project #2: Summer 2020 Project -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" />
-            <img alt="Perpetual Crusades" src="./assets/img/jpg/Perpetual-Crusades.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Perpetual Crusades</h3>
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-            style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
-            style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          <p style="text-align: justify">
-            I created a two-player online dice-based board game with a theme loosely set around Dungeons & Dragons. It
-            was developed as a submission for Penn Apps XXI, using ReactJS and CSS Grid Layouts for design and hosted on
-            GitHub Pages.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Summer-2020-Project"
-            >Check it out!</a
-          >
-        </div>
-      </div>
-
-      <!-- User Project #3: COVID-19 Tracker App -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/COVID19-Tracker-App.webp" alt="COVID-19 Tracker App" />
-            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/COVID19-Tracker-App.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>COVID-19 Tracker App</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
-              style="filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I created a web application for tracking the spread of COVID-19. Using Johns Hopkins University Center For
-            Systems Science and Engineering API, the website processes the COVID-19 data to create statistical
-            projections through graphs and charts.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/covid19-tracker-app">
-            Check it out!
-          </a>
-        </div>
-      </div>
-
-      <!-- Use Project #4: Valuto: Account Management System -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/webp/Valuto-Account-Management.webp"
-              alt="Valuto: Account Management System"
-            />
-            <img alt="Valuto: Account Management System" src="./assets/img/jpg/Valuto-Account-Management.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Valuto: Account Management System</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg"
-              style="filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I developed a CLI system for accounting management and financial statement maintenance. The purpose of the
-            system is to maintain a record of the funds received, used, disseminated and donated by an organization.
-            Details of transactions and maintenance of a budget and tallying of current balance/inventory in cash/kind
-            is incorporated in this system.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Valuto-Account-Management-System">
-            Check it out!
-          </a>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>&copy; Aditya Vikram Singh, 2020</p>
-    </footer>
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Experienced Adobe ColdFusion Developer at Arosys Technologies, proficient in PHP and skilled in jQuery AJAX. Specialized in crafting visually appealing webpages using HTML, CSS, Tailwind, Bootstrap, and Material UI. Possesses a strong foundation in Python, C++, C, and Java, with expertise in SQL. Eager to apply expertise to drive innovative web development projects forward.</p>
+          </div>
+        </div>
 
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
-</html>
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2024-Present</span>
+              <h2>Software Developer</h2>
+              <span class="position">Arosys</span>
+              <p class="mt-4">Arosys Technologies, a top US-based software company, specializes in web apps, e-Learning, media, and design. We craft custom software solutions to enhance functionality and productivity across industries.
+                <ul>
+                  <li>Working in developement of applications based on Adobe coldfusion and Jquery/Javascript.</li>
+                  <li>Experience of working in Microsoft Sql Server.</li>
+                  <!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
+                </ul>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2021-Present</span>
+              <h2>Freelancer Sketch Artist</h2>
+              <span class="position">ig/anurag.sketches</span>
+              <p class="mt-4">Freelance artist specializing in paid graphite and charcoal portraits. Self-taught and experienced in creating custom artwork. Find my portfolio on Instagram - @anurag.sketches
+                <ul>
+                  <li>Researching market trends to meet client demands.</li>
+                  <li>Offering personalized art workshops for aspiring artists.</li>
+                  <li>Collaborating with galleries to showcase my work.</li>
+
+                </ul>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2020-2023</span>
+              <h2>Bachelor of Computer Applications</h2>
+              <span class="position">Hemchand Yadav University</span>
+              <p class="mt-4">Grade: First class distinction.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2019-2020</span>
+              <h2>Higher Secondary School</h2>
+              <span class="position">CBSE (PCM)</span>
+              <p class="mt-4">Grade: First class distinction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+              <a href="https://drive.google.com/file/d/1t57uhVY_7clqIRjNwqBeQ2LzsUi0yhmM/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="ftco-section" id="project-section"> <div class="container"> <div class="row justify-content-center mb-5 pb-5"> <div class="col-md-7 heading-section text-center ftco-animate"> <h1 class="big big-2">Projects</h1> <h2 class="mb-4">Projects</h2> <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> </div> </div> <div class="row d-flex"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a> </h3> <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a> </h3> <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a> </h3> <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p> </div> </div> </div> </div> <br> <div class="row d-flex justify-content-center"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a> </h3> <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a> </h3> <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> </div> </div> </div> </div> </div> </section> -->
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="hid" style="visibility:hidden">
+        <div class="container">
+          <div class="row d-md-flex align-items-center">
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="20">0</strong>
+                  <span>Achievements</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="50">0</strong>
+                  <span>Artworks</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <!-- <div class="container"> -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>Here's my<span>
+                <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
+              </span>
+            </h2>
+            <div class="heading">
+              <h4>
+                I love to code &amp; create awesome artworks.
+              </h4>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Bhilai, Chhattisgarh</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p>
+                <a href="tel://7470695586">+91 747-069-5586</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p>
+                <a href="mailto:devnathanurag7.com">devnathanurag7@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download Resume</h3>
+              <p>
+                <a href="https://drive.google.com/file/d/1t57uhVY_7clqIRjNwqBeQ2LzsUi0yhmM/view">resumelink</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <br>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-md-7 ftco-animate text-center">
+                <h2>Have a<span>
+                    Question?
+                  </span>
+                </h2>
+                <div class="que" id="send-message">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="53850583-f0df-4410-b578-7dcc38204284">
+                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                      <div class="col-12">
+                        <label for="fullname" class="form-label">Full Name
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="email" class="form-label">Email
+                          <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                          </span>
+                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
+                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                          </span>
+                          <input type="tel" class="form-control" id="phone" name="phone" value="">
+                        </div>
+                      </div><br>
+                      <div class="col-12">
+                        <label for="subject" class="form-label">Subject
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Message
+                          <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-grid"><br>
+                          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on
+              </li>
+              <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/@RishabhMishraOfficial"> <span class="icon-youtube"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/anuragdevnath/">
+                  <span class="icon-linkedin"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://twitter.com/devnathanurag7">
+                  <span class="icon-twitter"></span></a>
+              </li>
+              <!-- <li class="ftco-animate"> <a href="https://twitter.com/rishabhnmishra"> <span class="icon-facebook"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.instagram.com/anurag.sketches/">
+                  <span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </section>
+
+      <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+              <p style="display: none;">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart color-danger" aria-hidden="true"></i>
+                by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+
+      <script src="js/main.js"></script>
+      <script>
+        function gitClick() {
+          window.location.href = 'https://github.com/anuragdevnath';
+        }
+      </script>
+
+    </body>
+
+  </html>
